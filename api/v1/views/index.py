@@ -30,6 +30,6 @@ def api_stats():
     The count of every entity
     """
     stat_dict = {}
-    for key, value in stat_dict.items():
+    for key, value in classes.items():
         stat_dict[key] = storage.count(value)
     return jsonify(stat_dict)
